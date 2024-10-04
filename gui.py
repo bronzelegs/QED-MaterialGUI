@@ -12,21 +12,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-
 import sys
 from PyQt6.QtWidgets import (QApplication, QMainWindow, QMenuBar, QMenu, QAction, QWidget,
                              QVBoxLayout, QFormLayout, QLabel, QLineEdit, QSpinBox,
                              QDoubleSpinBox, QComboBox, QPushButton, QTextEdit, QFileDialog, QDialog, QVBoxLayout)
 from PyQt6.QtCore import Qt
-from qmaterialwidgets import (QMaterialDialog, QMaterialElevatedButton, QMaterialTextField,
-                             QMaterialSlider, QMaterialCheckBox, QMaterialTab)
 from configuration import Configuration
 import json
 from visualization import visualize_data
-import base64
-from PIL import Image
-
 
 class VisualizationDialog(QDialog):
     def __init__(self, parent=None):
